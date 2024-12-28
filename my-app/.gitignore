@@ -7,8 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-dist
+
+# Next.js SSR builds (not applicable for static builds)
 dist-ssr
 *.local
 
@@ -23,3 +25,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Include build folder for Docker
+!dist/

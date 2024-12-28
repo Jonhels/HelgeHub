@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "../api/api";
+import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
     const [name, setName] = useState("");
@@ -44,6 +45,10 @@ const RegisterPage = () => {
             </form>
             {error && <p>{error}</p>}
             {success && <p>{success}</p>}
+            <p>
+                Already have an account?{" "}
+                <Link to="/login">Login here</Link>
+            </p>
         </div>
     );
 };
