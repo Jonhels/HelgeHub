@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const response = await api.get("/profile"); // Ensure the backend supports this endpoint
+                const response = await api.get("/profile");
                 setUser(response.data.user);
             } catch {
                 setUser(null);
