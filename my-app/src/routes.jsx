@@ -10,18 +10,19 @@ import VerifyEmailPage from "./pages/VerifyEmailPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
+import Layout from "./components/Layout";
 
 const AppRoutes = () => (
     <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
-        <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
-        <Route path="/password-reset-request" element={<PasswordResetRequestPage />} />
-        <Route path="/reset-password" element={<PasswordResetPage />} />
-        <Route path="/verify-email" element={<VerifyEmailPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/" element={ <Layout><HomePage /></Layout> } />
+        <Route path="/login" element={<Layout><LoginPage /></Layout> } />
+        <Route path="/register" element={<Layout><RegisterPage /></Layout>} />
+        <Route path="/dashboard" element={<Layout><ProtectedRoute><DashboardPage /></ProtectedRoute></Layout>} />
+        <Route path="/profile" element={<Layout><ProtectedRoute><ProfilePage /></ProtectedRoute></Layout>} />
+        <Route path="/password-reset-request" element={<Layout><PasswordResetRequestPage /></Layout>} />
+        <Route path="/reset-password" element={<Layout><PasswordResetPage /></Layout>} />
+        <Route path="/verify-email" element={<Layout><VerifyEmailPage /></Layout> } />
+        <Route path="*" element={<Layout><NotFoundPage /></Layout>} />
     </Routes>
 );
 
