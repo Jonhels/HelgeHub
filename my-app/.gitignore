@@ -11,6 +11,7 @@ lerna-debug.log*
 node_modules
 
 # Next.js SSR builds (not applicable for static builds)
+dist
 dist-ssr
 *.local
 
@@ -27,4 +28,3 @@ dist-ssr
 .env
 
 # Include build folder for Docker
-!dist/
