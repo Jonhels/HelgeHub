@@ -61,7 +61,7 @@
     }
 
     .socialIcons {
-        gap: 10px;
+        gap: 20px;
     }
 
     .iconWithLabel span {
@@ -71,7 +71,7 @@
 
 @media (max-width: 480px) {
     .footer {
-        padding: 5px;
+        padding: 20px;
     }
 
     .footerLinks p {
@@ -79,11 +79,11 @@
     }
 
     .socialIcons img {
-        width: 20px; 
-        height: 20px;
+        width: 40px; 
+        height: 40px;
     }
 
     .iconWithLabel span {
-        font-size: 10px;
+        font-size: var(--font-size-small);
     }
 }
