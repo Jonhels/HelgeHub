@@ -25,6 +25,7 @@ const AppRoutes = () => (
         <Route path="/verify-email" element={<Layout><VerifyEmailPage /></Layout> } />
         <Route path="*" element={<Layout><NotFoundPage /></Layout>} />
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
+        <Route path="/jon-helge" element={<Layout><HomePage /></Layout>} />
     </Routes>
 );
 
