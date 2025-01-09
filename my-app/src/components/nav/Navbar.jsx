@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import useLogout from "../hooks/useLogout";
-import AuthContext from "../context/AuthContext";
+import useLogout from "../../hooks/useLogout";
+import AuthContext from "../../context/AuthContext";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -9,10 +9,13 @@ const Navbar = () => {
     const logout = useLogout();
 
     return (
-        <nav>
+       <nav>
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
+                <li className="navigationLogo">
+                    <Link to="/">Skjærstein, Jon Helge</Link>
+                </li>
+                <li className="contactGrayButton">
+                    <Link to="/about">Contact me</Link>
                 </li>
                 {user ? (
                     <>
@@ -28,16 +31,17 @@ const Navbar = () => {
                     </>
                 ) : (
                     <>
-                        <li>
+                        {/* <li>
                             <Link to="/login">Login</Link>
                         </li>
                         <li>
                             <Link to="/register">Register</Link>
-                        </li>
+                        </li> */}
                     </>
                 )}
             </ul>
-        </nav>
+        </nav> 
+       
     );
 };
 

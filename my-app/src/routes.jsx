@@ -10,7 +10,7 @@ import VerifyEmailPage from "./pages/VerifyEmailPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Layout from "./components/Layout";
+import Layout from "./layout/Layout";
 
 const AppRoutes = () => (
     <Routes>

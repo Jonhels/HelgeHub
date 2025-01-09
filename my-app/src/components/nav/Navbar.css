@@ -1,0 +1,50 @@
+nav {
+    width: 100vw;
+    padding: 0 2%;
+    height: 70px;
+    background-color: var(--navigation-background-color);
+    display: flex; 
+    align-items: center; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+}
+
+nav li {
+    list-style: none; 
+    margin: 0; 
+}
+
+nav a {
+    color: var(--font-color-light);
+    text-decoration: none; 
+    font-size: var(--font-size-medium);  
+}
+
+nav a:hover {
+    color: var(--font-color-gray-header);
+}
+
+.navigationLogo{
+    width: 80px;
+}
+
+.contactGrayButton{
+    background-color: var(--contact-button-background-color-light);
+    padding: 5px;
+    border-radius: 8px;
+    width: 130px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactGrayButton a{
+    color: var(--font-color-dark);
+    font-size: var(--font-size-medium);
+}
