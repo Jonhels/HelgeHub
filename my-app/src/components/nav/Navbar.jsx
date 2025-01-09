@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link to="/">Skjærstein, Jon Helge</Link>
                 </li>
                 <li className="contactGrayButton">
-                    <Link to="/about">Contact me</Link>
+                    <Link to="/contact">Contact me</Link>
                 </li>
                 {user ? (
                     <>

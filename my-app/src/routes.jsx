@@ -11,6 +11,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Layout from "./layout/Layout";
+import ContactPage from "./pages/ContactPage";
 
 const AppRoutes = () => (
     <Routes>
@@ -23,6 +24,7 @@ const AppRoutes = () => (
         <Route path="/reset-password" element={<Layout><PasswordResetPage /></Layout>} />
         <Route path="/verify-email" element={<Layout><VerifyEmailPage /></Layout> } />
         <Route path="*" element={<Layout><NotFoundPage /></Layout>} />
+        <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
     </Routes>
 );
 
