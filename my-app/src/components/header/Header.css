@@ -1,0 +1,5 @@
+.header {
+    background-color: var(--dark-background-color);
+    height: 90vh;
+    margin-bottom: 5%;
+}

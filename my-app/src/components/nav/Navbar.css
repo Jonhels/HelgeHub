@@ -1,5 +1,5 @@
 nav {
-    width: 100vw;
+    width: 100%;
     padding: 0 2%;
     height: 70px;
     background-color: var(--navigation-background-color);

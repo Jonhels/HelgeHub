@@ -12,16 +12,18 @@ const Layout = ({ children }) => {
             style={{
                 display: "flex",
                 flexDirection: "column",
-                minHeight: "100vh", 
+                minHeight: "100vh",
+                width: "100vw",
                 margin: 0,
                 padding: 0,
             }}
         >
             <Navbar />
-            <main style={{ flex: 1 }}>{children}</main> {/* Pushes the Footer to the bottom */}
+            <main style={{ flex: 1 }}>{children}</main>
             <Footer />
         </div>
     );
 };
 
 export default Layout;
+
