@@ -7,10 +7,7 @@ const HomePage = () => {
 
     return (
         <div>
-            hello
-            <Link to="/login">Login here</Link>
-            <Link to="/register">Register here</Link>
-            <Link to="/password-reset-request">Forgot password?</Link>
+          
         </div>
     );
 };
