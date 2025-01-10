@@ -11,7 +11,7 @@ const HomePage = () => {
   const isJonHelgePage = location.pathname === "/jon-helge";
   return (
     <div className="home" style={{ width: "100%", height: "100%" }}>
-      |<Helmet>
+      <Helmet>
         <title>{isJonHelgePage ? "Jon Helge | Skjærstein" : "Skjærstein | Home"}</title>
         <meta name="description"
           content={isJonHelgePage ? "Explore Jon Helge's portfolio for innovative web development and design solutions."
@@ -20,6 +20,10 @@ const HomePage = () => {
         />
       </Helmet>
       <Header />
+
+      <div className="home__content">
+          ddddd
+      </div>
     </div>
   );
 };
