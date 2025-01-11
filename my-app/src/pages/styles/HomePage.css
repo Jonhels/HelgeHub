@@ -59,12 +59,36 @@ position: sticky;
   position: relative;
 }
 
-.article__content{
+.article2__content{
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 10%;
   padding: 5% 0;
+  
+}
+
+.article__text_wrapper{
+
+}
+
+.article__text{
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+.article__text h3{
+  font-size: var(--font-size-medium);
+  margin-bottom: 1%;
+}
+.article__text p{
+  font-size: var(--font-size-small);
+}
+
+.article__image{
+  width: 80%;
+  height: 80%;
 }
 
 /* Specific article styles */
