@@ -14,9 +14,9 @@ const Navbar = () => {
                 <li className="navigationLogo">
                     <Link to="/">Skjærstein, Jon Helge</Link>
                 </li>
-                <li className="contactGrayButton">
+               {/*  <li className="contactGrayButton">
                     <Link to="/contact">Contact me</Link>
-                </li>
+                </li> */}
                 {user ? (
                     <>
                         <li>
