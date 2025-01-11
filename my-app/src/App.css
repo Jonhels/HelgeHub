@@ -15,9 +15,11 @@
     --font-size-medium: 1rem; /* 16px */
     --font-size-large: 1.5rem; /* 24px */
     --font-size-title: 4rem; /* 64px */
+    --font-size-article-title: 3rem; /* 64px */
     --contact-button-background-color-light: #fff;
     --contact-button-background-color-dark: #27272C;
     --dark-background-color: #131316;
+    --light-background-color: #FFF;
     
     
 }

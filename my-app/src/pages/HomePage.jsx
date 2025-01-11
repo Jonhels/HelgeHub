@@ -22,17 +22,49 @@ const HomePage = () => {
         />
       </Helmet>
       <div className="home__header">
-      <Header />
+        <Header />
       </div>
       <div className="home__content">
-        <article className="article article1">Article 1</article>
-        <article className="article article2">Article 2</article>
-        <article className="article article3">Article 3</article>
-        <article className="article article4">Article 4</article>
-        <article className="article article5">Article 5</article>
-        <article className="article article6">Article 6</article>
-        <article className="article article7">Article 7</article>
-        <article className="article article8">Article 8</article>
+        <article className="article article1">
+          <h2>
+            <span>Skjærstein</span> creates you
+          </h2>
+        </article>
+        <article className="article article2">
+          <div className="article__content">
+            <p>test</p>
+          </div>
+        </article>
+        <article className="article article3">
+          <h2>
+            <span>Where Innovative design</span> meets seamless functionality
+          </h2>
+        </article>
+        <article className="article article4">
+          <div className="article__content">
+            <p>test</p>
+          </div>
+        </article>
+        <article className="article article5">
+          <h2>
+            <span>Building scalable solutions</span> with elegance
+          </h2>
+        </article>
+        <article className="article article6">
+          <div className="article__content">
+            <p>test</p>
+          </div>
+        </article>
+        <article className="article article7">
+          <h2>
+            <span>Let’s shape the future,</span> together
+          </h2>
+        </article>
+        <article className="article article8">
+          <div className="article__content">
+            <p>test</p>
+          </div>
+        </article>
       </div>
     </div>
   );

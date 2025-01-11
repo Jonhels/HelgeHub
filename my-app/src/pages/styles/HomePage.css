@@ -1,70 +1,149 @@
 .home__header {
-    position: sticky;
-    top: 0;
-    z-index: 0;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.home__content {
+  position: relative;
+  height: 1000vh;
+  /* Adjusted for 8 articles (8 x 100vh) */
+}
+
+/* Generic article styles */
+.article {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: z-index 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  background-color: var(--body-background-color);
+}
+
+.article1 h2,
+.article3 h2,
+.article5 h2,
+.article7 h2 {
+  font-size: var(--font-size-article-title);
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--dark-background-color);
+}
+.article1 span,
+.article3 span,
+.article5 span,
+.article7 span {
+  color: var(--font-color-gray-h2);
+}
+
+.article1 ,
+.article3 ,
+.article5 ,
+.article7 {
+height: 100vh;
+position: sticky;
+}
+
+.article2,
+.article4,
+.article6,
+.article8 {
+  background-color: var(--light-background-color);
+  height: 150vh;
+  display: block;
+  position: relative;
+}
+
+.article__content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 5% 0;
+  background-color: red;
+}
+
+/* Specific article styles */
+.article1 {
+  z-index: 8;
+}
+
+.article2 {
+  z-index: 7;
+}
+
+.article3 {
+  z-index: 6;
+}
+
+.article4 {
+  z-index: 5;
+}
+
+.article5 {
+  z-index: 4;
+}
+
+.article6 {
+  z-index: 3;
+}
+
+.article7 {
+  z-index: 2;
+}
+
+.article8 {
   
-  .home__content {
-    position: relative;
-    height: 800vh; /* Adjusted for 8 articles (8 x 100vh) */
+  /* Gold */
+  z-index: 1;
+}
+
+/* Reset baseline stacking context */
+.article {
+  z-index: 1;
+}
+
+/* Responsive typography for h2 elements */
+@media (max-width: 1200px) {
+  .article1 h2,
+  .article3 h2,
+  .article5 h2,
+  .article7 h2 {
+    font-size: calc(var(--font-size-article-title) * 0.9); /* Reduce font size slightly */
   }
-  
-  /* Generic article styles */
-  .article {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    transition: z-index 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .article1 h2,
+  .article3 h2,
+  .article5 h2,
+  .article7 h2 {
+    font-size: calc(var(--font-size-article-title) * 0.8);
+    text-align: center; /* Ensure proper alignment */
   }
-  
-  /* Specific article styles */
-  .article1 {
-    background: #ff6347; /* Red */
-    z-index: 8;
+}
+
+@media (max-width: 768px) {
+  .article1 h2,
+  .article3 h2,
+  .article5 h2,
+  .article7 h2 {
+    font-size: calc(var(--font-size-article-title) * 0.7);
+    padding: 0 10%; /* Add padding for smaller screens */
   }
-  
-  .article2 {
-    background: #4682b4; /* Blue */
-    z-index: 7;
+}
+
+@media (max-width: 576px) {
+  .article1 h2,
+  .article3 h2,
+  .article5 h2,
+  .article7 h2 {
+    font-size: calc(var(--font-size-article-title) * 0.6);
+    line-height: 1.2; /* Adjust line height for readability */
   }
-  
-  .article3 {
-    background: #32cd32; /* Green */
-    z-index: 6;
-  }
-  
-  .article4 {
-    background: #ffdb58; /* Yellow */
-    z-index: 5;
-  }
-  
-  .article5 {
-    background: #8a2be2; /* Purple */
-    z-index: 4;
-  }
-  
-  .article6 {
-    background: #00ced1; /* Cyan */
-    z-index: 3;
-  }
-  
-  .article7 {
-    background: #ff4500; /* Orange */
-    z-index: 2;
-  }
-  
-  .article8 {
-    background: #ffd700; /* Gold */
-    z-index: 1;
-  }
-  
-  /* Reset baseline stacking context */
-  .article {
-    z-index: 1;
-  }
+}
