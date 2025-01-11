@@ -131,6 +131,19 @@ position: sticky;
   z-index: 1;
 }
 
+@media (max-width: 1450px) {
+
+  .article__text h3{
+    width: 100%;
+    background-color: red;
+  }
+
+  .article__text{
+    width: 80%;
+    background-color: red;
+  }
+}
+
 /* Responsive typography for h2 elements */
 @media (max-width: 1200px) {
   .article1 h2,
@@ -138,6 +151,10 @@ position: sticky;
   .article5 h2,
   .article7 h2 {
     font-size: calc(var(--font-size-article-title) * 0.9); /* Reduce font size slightly */
+  }
+
+  .article__text{
+    width: 80%;
   }
 }
 

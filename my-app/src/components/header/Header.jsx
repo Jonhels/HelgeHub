@@ -16,7 +16,8 @@ const Header = () => {
                     <p className="headerContact__text">
                         Creating innovative, user-friendly web experiences through clean design and efficient code
                     </p>
-                    <Link to="/contact" className="headerContact__link">Contact me</Link>
+                    {/* <Link to="/contact" className="headerContact__link">Contact me</Link> */}
+                    <a className="headerContact__link" href="mailto:jon.helge@skjaerstein.com">Contact me</a>
                 </div>
             </div>
         </div>
