@@ -1,0 +1,70 @@
+.home__header {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .home__content {
+    position: relative;
+    height: 800vh; /* Adjusted for 8 articles (8 x 100vh) */
+  }
+  
+  /* Generic article styles */
+  .article {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    transition: z-index 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Specific article styles */
+  .article1 {
+    background: #ff6347; /* Red */
+    z-index: 8;
+  }
+  
+  .article2 {
+    background: #4682b4; /* Blue */
+    z-index: 7;
+  }
+  
+  .article3 {
+    background: #32cd32; /* Green */
+    z-index: 6;
+  }
+  
+  .article4 {
+    background: #ffdb58; /* Yellow */
+    z-index: 5;
+  }
+  
+  .article5 {
+    background: #8a2be2; /* Purple */
+    z-index: 4;
+  }
+  
+  .article6 {
+    background: #00ced1; /* Cyan */
+    z-index: 3;
+  }
+  
+  .article7 {
+    background: #ff4500; /* Orange */
+    z-index: 2;
+  }
+  
+  .article8 {
+    background: #ffd700; /* Gold */
+    z-index: 1;
+  }
+  
+  /* Reset baseline stacking context */
+  .article {
+    z-index: 1;
+  }
