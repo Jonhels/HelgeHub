@@ -66,7 +66,6 @@ position: sticky;
   align-items: center;
   margin: 0 10%;
   padding: 5% 0;
-  
 }
 
 .article__text_wrapper{
@@ -135,14 +134,13 @@ position: sticky;
 
   .article__text h3{
     width: 100%;
-    background-color: red;
   }
 
   .article__text{
     width: 80%;
-    background-color: red;
   }
 }
+
 
 /* Responsive typography for h2 elements */
 @media (max-width: 1200px) {
@@ -156,6 +154,33 @@ position: sticky;
   .article__text{
     width: 80%;
   }
+
+  /* article 1 styling column here */
+  .article2__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  .article__image{
+    width: 50%;
+    height: 50%;
+  }
+
+  .article__text_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 5% 0 0 0;
+  }
+
+  .article__text{
+    margin-bottom: 4%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -165,6 +190,11 @@ position: sticky;
   .article7 h2 {
     font-size: calc(var(--font-size-article-title) * 0.8);
     text-align: center; /* Ensure proper alignment */
+  }
+
+  .article__text_wrapper{
+    width: 80%;
+    margin: 5% 0 0 0;
   }
 }
 
@@ -176,6 +206,7 @@ position: sticky;
     font-size: calc(var(--font-size-article-title) * 0.7);
     padding: 0 10%; /* Add padding for smaller screens */
   }
+
 }
 
 @media (max-width: 576px) {
@@ -185,5 +216,15 @@ position: sticky;
   .article7 h2 {
     font-size: calc(var(--font-size-article-title) * 0.6);
     line-height: 1.2; /* Adjust line height for readability */
+  }
+
+  .article__text_wrapper{
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
+
+  .article__image{
+    width: 60%;
+    height: 60%;
   }
 }
