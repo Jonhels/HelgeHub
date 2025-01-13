@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import api from "../api/api";
 import AuthContext from "../context/AuthContext";
+import "./styles/ProfilePage.css";
 
 const ProfilePage = () => {
     const { user, setUser } = useContext(AuthContext);
@@ -15,31 +16,37 @@ const ProfilePage = () => {
             const response = await api.put("/update", { name, password });
             setUser(response.data.user);
             setSuccess("Profile updated successfully.");
+            setError(""); // Clear any previous errors
         } catch (err) {
             setError(err.response?.data?.error || "Update failed.");
+            setSuccess(""); // Clear any previous success messages
         }
     };
 
     return (
-        <div>
-            <h1>Profile</h1>
-            <form onSubmit={handleUpdate}>
+        <div className="profile-container">
+            <h1 className="profile-heading">Profile</h1>
+            <form className="profile-form" onSubmit={handleUpdate}>
                 <input
+                    className="profile-input"
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Name"
                 />
                 <input
+                    className="profile-input"
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="New Password"
                 />
-                <button type="submit">Update Profile</button>
+                <button className="profile-button" type="submit">
+                    Update Profile
+                </button>
             </form>
-            {success && <p>{success}</p>}
-            {error && <p>{error}</p>}
+            {success && <p className="success-message">{success}</p>}
+            {error && <p className="error-message">{error}</p>}
         </div>
     );
 };

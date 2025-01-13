@@ -11,6 +11,7 @@ import trending from "../icons/trending-up.svg"
 import user from "../icons/user.svg"
 import check from "../icons/check.svg"
 import shield from "../icons/shield.svg"
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const location = useLocation();
@@ -166,8 +167,20 @@ const HomePage = () => {
                   <p>
                     Have a project or an idea in mind? Let's work together to make it happen.
                   </p>
-                  <a className="headerContact__link" href="mailto:jon.helge@skjaerstein.com">Contact me</a>
+                  <a className="articleContact__link" href="mailto:jon.helge@skjaerstein.com">Contact me</a>
                 </div>
+                <div className="article__contact_login">
+                  <p>Want to connect with me directly? Create an account to log in and start a conversation!</p>
+                  <ul>
+                    <li>
+                      <Link to="/login">Already have an account? Log in.</Link>
+                    </li>
+                    <li>
+                      <Link to="/register">New here? Register.</Link>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>

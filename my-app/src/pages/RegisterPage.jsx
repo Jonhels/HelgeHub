@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import api from "../api/api";
 import { Link } from "react-router-dom";
+import "./styles/RegisterPage.css";
 
 const RegisterPage = () => {
     const [name, setName] = useState("");
@@ -14,13 +15,15 @@ const RegisterPage = () => {
         try {
             const response = await api.post("/register", { name, email, password });
             setSuccess(response.data.message);
+            setError(""); // Clear any previous errors
         } catch (err) {
             setError(err.response?.data?.error || "Registration failed.");
+            setSuccess(""); // Clear any previous success messages
         }
     };
 
     return (
-        <div>
+        <div className="register-container">
             <h1>Register</h1>
             <form onSubmit={handleRegister}>
                 <input
@@ -43,8 +46,8 @@ const RegisterPage = () => {
                 />
                 <button type="submit">Register</button>
             </form>
-            {error && <p>{error}</p>}
-            {success && <p>{success}</p>}
+            {error && <p className="error">{error}</p>}
+            {success && <p className="success">{success}</p>}
             <p>
                 Already have an account?{" "}
                 <Link to="/login">Login here</Link>

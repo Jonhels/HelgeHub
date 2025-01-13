@@ -9,14 +9,11 @@ const Navbar = () => {
     const logout = useLogout();
 
     return (
-       <nav>
+        <nav>
+            <div className="navigationLogo">
+                <Link to="/">Skjærstein, Jon Helge</Link>
+            </div>
             <ul>
-                <li className="navigationLogo">
-                    <Link to="/">Skjærstein, Jon Helge</Link>
-                </li>
-               {/*  <li className="contactGrayButton">
-                    <Link to="/contact">Contact me</Link>
-                </li> */}
                 {user ? (
                     <>
                         <li>
@@ -31,17 +28,16 @@ const Navbar = () => {
                     </>
                 ) : (
                     <>
-                        {/* <li>
+                        <li>
                             <Link to="/login">Login</Link>
                         </li>
                         <li>
                             <Link to="/register">Register</Link>
-                        </li> */}
+                        </li>
                     </>
                 )}
             </ul>
-        </nav> 
-       
+        </nav>
     );
 };
 

@@ -1,13 +1,16 @@
 import React from "react";
 import useLogout from "../hooks/useLogout";
+import "./styles/Dashboard.css";
 
 const DashboardPage = () => {
     const logout = useLogout();
 
     return (
-        <div>
-            <h1>Dashboard</h1>
-            <button onClick={logout}>Logout</button>
+        <div className="dashboard-container">
+            <h1 className="dashboard-heading">Dashboard</h1>
+            <button className="dashboard-logout-button" onClick={logout}>
+                Logout
+            </button>
         </div>
     );
 };

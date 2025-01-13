@@ -3,26 +3,28 @@ nav {
     padding: 0 2%;
     height: 70px;
     background-color: var(--navigation-background-color);
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    width: 100%; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
 }
 
 nav li {
-    list-style: none; 
-    margin: 0; 
+    margin: 0;
 }
 
 nav a {
     color: var(--font-color-light);
-    text-decoration: none; 
-    font-size: var(--font-size-medium);  
+    text-decoration: none;
+    font-size: var(--font-size-medium);
 }
 
 nav a:hover {
@@ -33,18 +35,20 @@ nav a:hover {
     width: 80px;
 }
 
-.contactGrayButton{
-    background-color: var(--contact-button-background-color-light);
-    padding: 5px;
-    border-radius: 8px;
-    width: 130px;
-    height: 33px;
+
+
+.rightNav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
-.contactGrayButton a{
-    color: var(--font-color-dark);
-    font-size: var(--font-size-medium);
-}
+
+
+
+/* Responsive typography for h2 elements */
+@media (max-width: 1200px) {
+
+    nav {
+        padding: 0 5%;
+    }
+  }

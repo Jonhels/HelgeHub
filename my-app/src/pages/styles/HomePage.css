@@ -106,7 +106,7 @@
 }
 
 .article__contact p {
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 
 .article__text_flex {
@@ -125,7 +125,47 @@
   margin: 0 0 0 0;
 }
 
-.headerContact__link {
+.article__contact_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0 0 0;
+  text-align: center; 
+  color: var(--font-color-dark);
+}
+
+.article__contact_login p {
+  font-size: var(--font-size-medium);
+  margin-bottom: 20px; 
+  color: var(--font-color-dark); 
+}
+
+.article__contact_login ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.article__contact_login li {
+  margin: 10px 0; 
+  font-size: var(--font-size-small); 
+}
+
+.article__contact_login li a {
+  text-decoration: none; /* Remove underlines */
+  color: var(--font-color-primary); /* Use your theme's primary color */
+  font-weight: bold; /* Highlight the links */
+  transition: color 0.3s ease; /* Add smooth hover effect */
+}
+
+.article__contact_login li a:hover {
+  color: var(--font-color-gray-header); 
+}
+
+
+
+.articleContact__link {
   background-color: var(--navigation-background-color);
   padding: 5px;
   border-radius: 8px;
@@ -136,6 +176,10 @@
   align-items: center;
   color: var(--font-color-light);
   font-size: var(--font-size-medium);
+}
+
+.articleContact__link:hover {
+  color: var(--font-color-gray-header);
 }
 
 .highlight {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import api from "../api/api";
+import "./styles/ResetPassword.css";
 
 const PasswordResetPage = () => {
     const [searchParams] = useSearchParams();
@@ -14,25 +15,30 @@ const PasswordResetPage = () => {
         try {
             const response = await api.post(`/reset-password?token=${token}`, { newPassword });
             setSuccess(response.data.message);
+            setError(""); // Clear any previous error messages
         } catch (err) {
             setError(err.response?.data?.error || "Password reset failed.");
+            setSuccess(""); // Clear any previous success messages
         }
     };
 
     return (
-        <div>
-            <h1>Reset Password</h1>
-            <form onSubmit={handlePasswordReset}>
+        <div className="password-reset-container">
+            <h1 className="password-reset-heading">Reset Password</h1>
+            <form className="password-reset-form" onSubmit={handlePasswordReset}>
                 <input
+                    className="password-reset-input"
                     type="password"
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
                     placeholder="New Password"
                 />
-                <button type="submit">Reset Password</button>
+                <button className="password-reset-button" type="submit">
+                    Reset Password
+                </button>
             </form>
-            {success && <p>{success}</p>}
-            {error && <p>{error}</p>}
+            {success && <p className="success-message">{success}</p>}
+            {error && <p className="error-message">{error}</p>}
         </div>
     );
 };
