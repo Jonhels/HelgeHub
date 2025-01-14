@@ -2,7 +2,7 @@ nav {
     width: 100%;
     padding: 0 2%;
     height: 70px;
-    background-color: var(--navigation-background-color);
+    background-color: var(--dark-background-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
