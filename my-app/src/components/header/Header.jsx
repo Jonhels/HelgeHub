@@ -54,11 +54,13 @@ const Particle = ({ headerWidth, headerHeight }) => {
                 y: randomValue(-headerHeight, headerHeight), // Move particles randomly in height
                 opacity: [0, 1, 0], // Fade in and out
             }}
-            transition={{
-                duration: randomValue(25, 30), // Random animation duration
-                repeat: Infinity, // Infinite loop
-                ease: "easeInOut",
-            }}
+    
+                transition={{
+                    duration: 25, // Random animation duration
+                    repeat: Infinity, // Infinite loop
+                    ease: "linear",
+                    
+                }}
         />
     );
 };
