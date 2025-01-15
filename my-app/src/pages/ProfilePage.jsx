@@ -11,7 +11,7 @@ const ProfilePage = () => {
     const [error, setError] = useState("");
 
     const handleUpdate = async (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevents the form from submitting and reloading the page
         try {
             const response = await api.put("/update", { name, password });
             setUser(response.data.user);
@@ -23,10 +23,28 @@ const ProfilePage = () => {
         }
     };
 
+    const handleDelete = async (e) => {
+        e.preventDefault();
+        if (window.confirm("Are you sure you want to delete your account?")) {
+            try {
+                const response = await api.delete("/delete");
+                setUser(null);
+                setSuccess("User deleted successfully.");
+                setError("");
+            } catch (err) {
+                setError(err.response?.data?.error || "Failed to delete account.");
+                setSuccess("");
+            }
+        }
+    };
+
+    /* delete: /delete */
+
     return (
         <div className="profile-container">
             <h1 className="profile-heading">Profile</h1>
             <form className="profile-form" onSubmit={handleUpdate}>
+                <label className="profile-label">Name</label>
                 <input
                     className="profile-input"
                     type="text"
@@ -34,6 +52,7 @@ const ProfilePage = () => {
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Name"
                 />
+                <label className="profile-label">Password</label>
                 <input
                     className="profile-input"
                     type="password"
@@ -45,6 +64,13 @@ const ProfilePage = () => {
                     Update Profile
                 </button>
             </form>
+            <button
+                className="profile-button"
+                style={{ backgroundColor: "red", marginTop: "1rem" }}
+                onClick={handleDelete}
+            >
+                Delete Account
+            </button>
             {success && <p className="success-message">{success}</p>}
             {error && <p className="error-message">{error}</p>}
         </div>

@@ -8,6 +8,7 @@ const DashboardPage = () => {
     return (
         <div className="dashboard-container">
             <h1 className="dashboard-heading">Dashboard</h1>
+            <p>This page is a work in progress.</p>
             <button className="dashboard-logout-button" onClick={logout}>
                 Logout
             </button>
