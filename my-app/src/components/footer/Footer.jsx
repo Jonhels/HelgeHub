@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footerLinks">
-                <p>© 2025 Jon Helge Skjærstein. All rights reserved.</p>
+                <p tabIndex={0}>© 2025 Jon Helge Skjærstein. All rights reserved.</p>
             </div>
             <div className="socialIcons">
                 <div className="iconWithLabel">

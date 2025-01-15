@@ -77,14 +77,14 @@ const Header = () => {
                 ))}
             </div>
             <div className="headerInformation">
-                <h1 className="headerInformation__title">Jon Helge Skjærstein</h1>
-                <p className="headerInformation__subtitle">
+                <h1 tabIndex={0} className="headerInformation__title">Jon Helge Skjærstein</h1>
+                <p tabIndex={0} className="headerInformation__subtitle">
                     Certified Computer Electronics Specialist | Bachelor's in Web Development | Full-Stack Web Developer
                 </p>
             </div>
             <div className="headerContactWrapper">
                 <div className="headerContact">
-                    <p className="headerContact__text">
+                    <p tabIndex={0} className="headerContact__text">
                         Creating innovative, user-friendly web experiences through clean design and efficient code
                     </p>
                     <a className="headerContact__link" href="mailto:jon.helge@skjaerstein.com">
