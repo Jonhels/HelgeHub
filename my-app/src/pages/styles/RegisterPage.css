@@ -6,7 +6,7 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f0f8ff; /* Alice Blue */
+    background-color: var(--light-background-color);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .register-container input:focus {
-    border-color: #4682b4; /* Steel Blue */
+    border-color: var(--button-background-color);
     box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
 }
 
@@ -44,7 +44,7 @@
 .register-container button {
     padding: 10px;
     font-size: 1rem;
-    background-color: #4682b4; /* Steel Blue */
+    background-color: var(--button-background-color);
     color: #ffffff; /* White */
     border: none;
     border-radius: 5px;

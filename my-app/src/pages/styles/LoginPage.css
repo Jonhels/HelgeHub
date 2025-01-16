@@ -5,7 +5,7 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fffaf0; /* Floral White */
+    background-color: var(--light-background-color);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -28,14 +28,14 @@
 .login-container input {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #dda0dd; /* Plum */
+    border: 1px solid #b0c4de; /* Light Steel Blue */
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 .login-container input:focus {
-    border-color: #8a2be2; /* Blue Violet */
+    border-color: var(--button-background-color);
     box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
 }
 
@@ -43,7 +43,7 @@
 .login-container button {
     padding: 10px;
     font-size: 1rem;
-    background-color: #8a2be2; /* Blue Violet */
+    background-color: var(--button-background-color);
     color: #ffffff; /* White */
     border: none;
     border-radius: 5px;
@@ -79,7 +79,7 @@
 
 /* Links */
 .login-container a {
-    color: #8a2be2; /* Blue Violet */
+    color: #4682b4; /* Steel Blue */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
