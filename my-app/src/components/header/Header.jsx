@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { motion } from "framer-motion";
 import "./Header.css";
 import Jacke from "../../icons/Jacke.svg";
@@ -66,14 +66,36 @@ const Particle = ({ headerWidth, headerHeight }) => {
 };
 
 const Header = () => {
-    const headerWidth = window.innerWidth; // Full width of the viewport
-    const headerHeight = window.innerHeight; // Full height of the viewport
+    const [dimensions, setDimensions] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    const [particleKey, setParticleKey] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setDimensions({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+            setParticleKey((prevKey) => prevKey + 1)
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
 
     return (
         <div className="header">
-            <div className="headerParticles">
+            <div className="headerParticles" key={particleKey}>
                 {Array.from({ length: 100 }).map((_, index) => (
-                    <Particle key={index} headerWidth={headerWidth} headerHeight={headerHeight} />
+                    <Particle key={index} headerWidth={dimensions.width} headerHeight={dimensions.height} />
                 ))}
             </div>
             <div className="headerInformation">
