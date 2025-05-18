@@ -13,6 +13,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Layout from "./layout/Layout";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
 
 const AppRoutes = () => (
     <Routes>
@@ -28,6 +29,7 @@ const AppRoutes = () => (
         <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
         <Route path="/jon-helge" element={<Layout><HomePage /></Layout>} />
         <Route path="/projects" element={<Layout><ProjectsPage /></Layout>} />
+        <Route path="/about" element={<Layout><AboutPage /></Layout>} />
     </Routes>
 );
 
