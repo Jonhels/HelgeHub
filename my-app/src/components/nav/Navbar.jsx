@@ -28,15 +28,15 @@ const Navbar = () => {
                     </>
                 ) : (
                     <>
-                        <li>
+                        {/* <li>
                             <Link to="/">Home</Link>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                             <Link to="/projects">Projects</Link>
                         </li>
                         <li>
                             <Link to="/about">About</Link>
-                        </li>
+                        </li> */}
                         {/* <li>
                             <Link to="/login">Login</Link>
                         </li> */}
