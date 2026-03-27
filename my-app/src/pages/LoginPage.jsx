@@ -16,10 +16,9 @@ const LoginPage = () => {
     useEffect(() => {
         if (!loading) {
             if (user) {
-                console.log("User is logged in, redirecting to dashboard...");
                 navigate("/dashboard");
             } else {
-                console.log("No user logged in.");
+                throw new Error("User is not authenticated, staying on login page.");
             }
         }
     }, [loading, user, navigate]);

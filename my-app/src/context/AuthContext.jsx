@@ -11,14 +11,11 @@ export const AuthProvider = ({ children }) => {
         const fetchUser = async () => {
             try {
                 const response = await api.get("/profile");
-                console.log("Fetched user:", response.data.user);
                 setUser(response.data.user);
             } catch (err) {
-                console.log("No user logged in or error fetching user:", err);
                 setUser(null);
             } finally {
                 setLoading(false);
-                console.log("Finished authentication check.");
             }
         };
         fetchUser();
