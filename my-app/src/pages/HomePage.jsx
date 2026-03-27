@@ -169,18 +169,6 @@ const HomePage = () => {
                   </p>
                   <a className="articleContact__link" href="mailto:jon.helge@skjaerstein.com">Contact me</a>
                 </div>
-                <div className="article__contact_login">
-                  <p tabIndex={0}>Want to connect with me directly? Create an account to log in and start a conversation!</p>
-                  <ul>
-                    <li>
-                      <Link to="/login">Already have an account? Log in.</Link>
-                    </li>
-                    <li>
-                      <Link to="/register">New here? Register.</Link>
-                    </li>
-                  </ul>
-                </div>
-
               </div>
             </div>
           </div>
