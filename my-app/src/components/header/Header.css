@@ -70,19 +70,24 @@
 
 .headerContact__link {
   background-color: var(--contact-button-background-color-light);
-  padding: 5px;
+  padding: 0.75em 1.5em;
   border-radius: 8px;
-  width: 130px;
-  height: 33px;
+  width: 160px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--font-color-dark);
   font-size: var(--font-size-medium);
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
 .headerContact__link:hover {
   color: var(--font-color-gray-header);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Media Queries for Responsiveness */

@@ -19,15 +19,15 @@
     },
     "articles": {
       "1": {
-        "headline": "<0>Skjærstein</0> creates you"
+        "headline": "Built for Results"
       },
       "2": {
-        "heading1": "Scalable Web Solutions with Creative Precision",
-        "body1": "I craft scalable, efficient, and user-friendly web solutions. With skills in React, Node.js, and design tools like Figma, I combine creativity and precision to deliver impactful results. Whether you need a dynamic web application, a modern online presence, or an intuitive user interface, I'm here to bring your vision to life.",
-        "heading2": "Streamlined Processes, Reliable Solutions",
-        "body2": "I utilize modern tools and workflows to ensure efficiency and reliability in every project. With Docker, I create containerized environments for seamless deployment. CI/CD pipelines, powered by GitHub Actions, ensure smooth integration and delivery. Hosting platforms like Railway allow me to deploy scalable, production-ready applications. My focus is on delivering solutions that are robust, maintainable, and adaptable.",
-        "heading3": "Designing for Impact, Developing for Scale",
-        "body3": "Great development is a balance of creativity and precision. My approach combines a user-focused design mindset with a commitment to building scalable, efficient systems. Every line of code and design decision is crafted with purpose to create seamless experiences that solve real-world problems and empower users."
+        "heading1": "Web Solutions That Scale",
+        "body1": "Scalable, efficient web solutions using React, Node.js, and modern design tools. From dynamic applications to clean interfaces, your vision drives the build.",
+        "heading2": "Reliable Delivery",
+        "body2": "Docker containerization, GitHub Actions CI/CD, and Railway hosting keep deployments smooth and your application stable.",
+        "heading3": "Design Meets Function",
+        "body3": "Clean code and thoughtful design decisions that solve real problems and work for your users."
       },
       "3": {
         "headline": "<0>Where Innovative design</0> meets seamless functionality"
@@ -55,8 +55,8 @@
         "headline": "<0>Let's shape the future,</0> together"
       },
       "8": {
-        "heading1": "Do you like me?",
-        "body1": "Have a project or an idea in mind? Let's work together to make it happen.",
+        "heading1": "Get in Touch",
+        "body1": "Have a project in mind? Send a message and let's discuss how to bring it to life.",
         "contactCta": "Contact me"
       }
     }

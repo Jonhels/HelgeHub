@@ -8,7 +8,7 @@
     "title": "Jon Helge Skjærstein",
     "subtitle": "Sertifisert Dataelektroniker | Bachelor i Webutvikling | Full-Stack Webutvikler",
     "description": "Skaper innovative, brukervennlige webopplevelser gjennom rent design og effektiv kode",
-    "contactCta": "Kontakt meg"
+    "contactCta": "Kontakt"
   },
   "homepage": {
     "meta": {
@@ -19,15 +19,15 @@
     },
     "articles": {
       "1": {
-        "headline": "<0>Skjærstein</0> skaper deg"
+        "headline": "Bygget for resultater"
       },
       "2": {
-        "heading1": "Skalerbare webløsninger med kreativ presisjon",
-        "body1": "Jeg lager skalerbare, effektive og brukervennlige webløsninger. Med ferdigheter i React, Node.js og designverktøy som Figma kombinerer jeg kreativitet og presisjon for å levere slagkraftige resultater. Enten du trenger en dynamisk webapplikasjon, en moderne online tilstedeværelse eller et intuitivt brukergrensesnitt, er jeg her for å bringe din visjon til live.",
-        "heading2": "Strømlinjeformede prosesser, pålitelige løsninger",
-        "body2": "Jeg bruker moderne verktøy og arbeidsflyter for å sikre effektivitet og pålitelighet i hvert prosjekt. Med Docker lager jeg containeriserte miljøer for sømløs distribusjon. CI/CD-pipelines, drevet av GitHub Actions, sikrer smidig integrasjon og levering. Hostingplattformer som Railway lar meg distribuere skalerbare, produksjonsklare applikasjoner. Mitt fokus er på å levere løsninger som er robuste, vedlikeholdbare og tilpasningsdyktige.",
-        "heading3": "Designer for effekt, utvikler for skala",
-        "body3": "God utvikling er en balanse mellom kreativitet og presisjon. Min tilnærming kombinerer et brukerfokusert designperspektiv med en forpliktelse til å bygge skalerbare, effektive systemer. Hver kodelinje og designbeslutning er laget med hensikt for å skape sømløse opplevelser som løser virkelige problemer og styrker brukerne."
+        "heading1": "Web-løsninger som skalerer",
+        "body1": "Skalerbare, effektive web-løsninger med React, Node.js og moderne designverktøy. Fra dynamiske applikasjoner til rene grensesnitt—din visjon styrer byggingen.",
+        "heading2": "Pålitelig levering",
+        "body2": "Docker-containerisering, GitHub Actions CI/CD og Railway-hosting sørger for smidige distribusjoner og stabil drift.",
+        "heading3": "Design møter funksjon",
+        "body3": "Ren kode og gjennomtenkte designvalg som løser reelle problemer og fungerer for dine brukere."
       },
       "3": {
         "headline": "<0>Der innovativt design</0> møter sømløs funksjonalitet"
@@ -55,9 +55,9 @@
         "headline": "<0>La oss forme fremtiden,</0> sammen"
       },
       "8": {
-        "heading1": "Liker du meg?",
-        "body1": "Har du et prosjekt eller en idé i tankene? La oss samarbeide for å realisere det.",
-        "contactCta": "Kontakt meg"
+        "heading1": "Ta kontakt",
+        "body1": "Har du et prosjekt i tankene? Send en melding, så finner vi ut av det sammen.",
+        "contactCta": "Kontakt"
       }
     }
   },
