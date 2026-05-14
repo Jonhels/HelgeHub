@@ -1,4 +1,3 @@
-import React from "react"
 import "./Footer.css"
 import email from "../../icons/at-sign.svg"
 import github from "../../icons/github.svg"

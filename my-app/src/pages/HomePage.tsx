@@ -1,9 +1,7 @@
-import React from "react"
 import { Helmet } from "react-helmet-async"
-import { useLocation } from "react-router-dom" // Import Link from React Router
+import { useLocation } from "react-router-dom"
 import Header from "../components/header/Header"
 import "./styles/HomePage.css"
-import { Link } from "react-router-dom"
 import check from "../icons/check.svg"
 import illustration from "../icons/mobile.svg"
 import puzzle from "../icons/puzzle.svg"
@@ -108,7 +106,7 @@ const HomePage = () => {
                   <h3 tabIndex={0}>User-Centered Design</h3>
                   <p tabIndex={0}>
                     Every project starts with the user in mind. I prioritize
-                    intuitive interfaces that make your users’ journey seamless
+                    intuitive interfaces that make your users' journey seamless
                     and enjoyable.
                   </p>
                 </div>
