@@ -1,12 +1,19 @@
-import { motion } from "framer-motion"
-import React, { useEffect, useState } from "react"
+import { motion } from "motion/react"
+import { useEffect, useState } from "react"
 import "./Header.css"
 import Jacke from "../../icons/Jacke.svg"
+import type { Dimensions } from "../../types/components"
 
 // Utility to generate random values
-const randomValue = (min, max) => Math.random() * (max - min) + min
+const randomValue = (min: number, max: number): number =>
+  Math.random() * (max - min) + min
 
-const Particle = ({ headerWidth, headerHeight }) => {
+interface ParticleProps {
+  headerWidth: number
+  headerHeight: number
+}
+
+const Particle = ({ headerWidth, headerHeight }: ParticleProps) => {
   const size = randomValue(5, 15) // Random size
   const isLogo = Math.random() < 0.05 // 5% chance of being a logo particle
 
@@ -65,12 +72,12 @@ const Particle = ({ headerWidth, headerHeight }) => {
 }
 
 const Header = () => {
-  const [dimensions, setDimensions] = useState({
+  const [dimensions, setDimensions] = useState<Dimensions>({
     width: window.innerWidth,
     height: window.innerHeight,
   })
 
-  const [particleKey, setParticleKey] = useState(0)
+  const [particleKey, setParticleKey] = useState<number>(0)
 
   useEffect(() => {
     const handleResize = () => {
