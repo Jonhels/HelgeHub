@@ -11,11 +11,11 @@
   --font-color-gray-header: #bebebe;
   --font-color-gray-h2: #686873;
   --body-background-color: #ebebf0;
-  --font-size-small: 0.875rem; /* 14px */
-  --font-size-medium: 1rem; /* 16px */
-  --font-size-large: 1.5rem; /* 24px */
+  --font-size-small: 1rem; /* 16px */
+  --font-size-medium: 1.125rem; /* 18px */
+  --font-size-large: 1.75rem; /* 28px */
   --font-size-title: 4rem; /* 64px */
-  --font-size-article-title: 3rem; /* 64px */
+  --font-size-article-title: 3rem; /* 48px */
   --contact-button-background-color-light: #fff;
   --contact-button-background-color-dark: #27272c;
   --dark-background-color: #131316;
@@ -28,4 +28,28 @@ body {
   background-color: var(--body-background-color);
   color: var(--font-color-dark);
   overflow-x: hidden;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--dark-background-color);
+  color: var(--font-color-light);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus visible */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--button-background-color);
+  outline-offset: 2px;
 }

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "logo": "Skjærstein, Jon Helge",
+    "language": "Språk",
+    "switchTo": "Bytt til engelsk"
+  },
+  "header": {
+    "title": "Jon Helge Skjærstein",
+    "subtitle": "Sertifisert Dataelektroniker | Bachelor i Webutvikling | Full-Stack Webutvikler",
+    "description": "Skaper innovative, brukervennlige webopplevelser gjennom rent design og effektiv kode",
+    "contactCta": "Kontakt"
+  },
+  "homepage": {
+    "meta": {
+      "titleDefault": "Skjærstein | Hjem",
+      "titleAlt": "Jon Helge | Skjærstein",
+      "descriptionDefault": "Velkommen til Skjærstein, hvor innovativt design møter skalerbar funksjonalitet.",
+      "descriptionAlt": "Utforsk Jon Helges portefølje for innovative webutviklings- og designløsninger."
+    },
+    "articles": {
+      "1": {
+        "headline": "Bygget for resultater"
+      },
+      "2": {
+        "heading1": "Web-løsninger som skalerer",
+        "body1": "Skalerbare, effektive web-løsninger med React, Node.js og moderne designverktøy. Fra dynamiske applikasjoner til rene grensesnitt—din visjon styrer byggingen.",
+        "heading2": "Pålitelig levering",
+        "body2": "Docker-containerisering, GitHub Actions CI/CD og Railway-hosting sørger for smidige distribusjoner og stabil drift.",
+        "heading3": "Design møter funksjon",
+        "body3": "Ren kode og gjennomtenkte designvalg som løser reelle problemer og fungerer for dine brukere."
+      },
+      "3": {
+        "headline": "<0>Der innovativt design</0> møter sømløs funksjonalitet"
+      },
+      "4": {
+        "heading1": "Brukervennlig design",
+        "body1": "Hvert prosjekt starter med brukeren i tankene. Jeg prioriterer intuitive grensesnitt som gjør brukernes reise sømløs og fornøyelig.",
+        "heading2": "Effektiv funksjonalitet",
+        "body2": "Jeg utvikler robuste og skalerbare systemer som sikrer at applikasjonene dine kjører problemfritt, uansett belastning.",
+        "heading3": "Stabilitet du kan stole på",
+        "body3": "Jeg prioriterer å bygge løsninger som er robuste, sikre og vedlikeholdbare, og sikrer at applikasjonene dine er pålitelige nå og i fremtiden."
+      },
+      "5": {
+        "headline": "<0>Bygger skalerbare løsninger</0> med eleganse"
+      },
+      "6": {
+        "heading1": "Starter smått, tenker stort",
+        "body1": "Jeg lager løsninger med <0>fremtidig vekst</0> i tankene, og sikrer at selv de minste prosjektene har rom for utvidelse når det trengs.",
+        "heading2": "Effektivitet i hvert steg",
+        "body2": "Jeg bruker verktøy som Docker og GitHub Actions for å <0>strømlinjeforme utviklingen</0>, og sørger for at prosessen er smidig og effektiv.",
+        "heading3": "Holder det enkelt",
+        "body3": "<0>Enkelhet</0> gjør løsninger enklere å vedlikeholde og forbedre. Jeg tilstreber å holde design og kode ren, så de er enkle å jobbe med."
+      },
+      "7": {
+        "headline": "<0>La oss forme fremtiden,</0> sammen"
+      },
+      "8": {
+        "heading1": "Ta kontakt",
+        "body1": "Har du et prosjekt i tankene? Send en melding, så finner vi ut av det sammen.",
+        "contactCta": "Kontakt"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Jon Helge Skjærstein. Alle rettigheter reservert.",
+    "social": {
+      "github": "GitHub",
+      "githubLabel": "Besøk min GitHub-profil",
+      "linkedin": "LinkedIn",
+      "linkedinLabel": "Besøk min LinkedIn-profil",
+      "email": "E-post",
+      "emailLabel": "Send meg en e-post"
+    }
+  }
+}

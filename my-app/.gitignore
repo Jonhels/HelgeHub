@@ -1,3 +1,15 @@
+# React + Vite project gitignore
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
 # Logs
 logs
 *.log
@@ -7,24 +19,42 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
-node_modules
+# Environment variables (secrets, local configs)
+.env
+.env.local
+.env.*.local
 
-# Next.js SSR builds (not applicable for static builds)
-dist
-dist-ssr
-*.local
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# Linting/Formatting caches
+.eslintcache
+.biome/
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
 
-# Include build folder for Docker
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*

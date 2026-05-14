@@ -25,19 +25,25 @@
 .headerInformation {
   z-index: 1;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headerInformation__title {
   color: var(--font-color-light);
   font-weight: lighter;
   font-size: var(--font-size-title);
-  width: 30%;
+  width: 100%;
+  text-align: center;
   margin-bottom: 15px;
 }
 
 .headerInformation__subtitle {
   color: var(--font-color-gray-header);
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
   font-size: var(--font-size-medium);
 }
 
@@ -64,19 +70,24 @@
 
 .headerContact__link {
   background-color: var(--contact-button-background-color-light);
-  padding: 5px;
+  padding: 0.75em 1.5em;
   border-radius: 8px;
-  width: 130px;
-  height: 33px;
+  width: 160px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--font-color-dark);
   font-size: var(--font-size-medium);
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
 .headerContact__link:hover {
   color: var(--font-color-gray-header);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Media Queries for Responsiveness */
@@ -134,5 +145,11 @@
 
   .headerContact__text {
     width: 85%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerParticles {
+    display: none;
   }
 }

@@ -32,12 +32,28 @@ nav a:hover {
 }
 
 .navigationLogo {
-  width: 80px;
+  width: 100px;
 }
 
 .rightNav {
   display: flex;
   gap: 10px;
+}
+
+.languageToggle {
+  background: none;
+  border: 1px solid var(--font-color-light);
+  color: var(--font-color-light);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.languageToggle:hover {
+  background-color: var(--font-color-light);
+  color: var(--dark-background-color);
 }
 
 /* Responsive typography for h2 elements */

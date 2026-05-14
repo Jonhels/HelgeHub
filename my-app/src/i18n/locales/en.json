@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "logo": "Skjærstein, Jon Helge",
+    "language": "Language",
+    "switchTo": "Switch to Norwegian"
+  },
+  "header": {
+    "title": "Jon Helge Skjærstein",
+    "subtitle": "Certified Computer Electronics Specialist | Bachelor's in Web Development | Full-Stack Web Developer",
+    "description": "Creating innovative, user-friendly web experiences through clean design and efficient code",
+    "contactCta": "Contact me"
+  },
+  "homepage": {
+    "meta": {
+      "titleDefault": "Skjærstein | Home",
+      "titleAlt": "Jon Helge | Skjærstein",
+      "descriptionDefault": "Welcome to Skjærstein, where innovative design meets scalable functionality.",
+      "descriptionAlt": "Explore Jon Helge's portfolio for innovative web development and design solutions."
+    },
+    "articles": {
+      "1": {
+        "headline": "Built for Results"
+      },
+      "2": {
+        "heading1": "Web Solutions That Scale",
+        "body1": "Scalable, efficient web solutions using React, Node.js, and modern design tools. From dynamic applications to clean interfaces, your vision drives the build.",
+        "heading2": "Reliable Delivery",
+        "body2": "Docker containerization, GitHub Actions CI/CD, and Railway hosting keep deployments smooth and your application stable.",
+        "heading3": "Design Meets Function",
+        "body3": "Clean code and thoughtful design decisions that solve real problems and work for your users."
+      },
+      "3": {
+        "headline": "<0>Where Innovative design</0> meets seamless functionality"
+      },
+      "4": {
+        "heading1": "User-Centered Design",
+        "body1": "Every project starts with the user in mind. I prioritize intuitive interfaces that make your users' journey seamless and enjoyable.",
+        "heading2": "Efficient Functionality",
+        "body2": "I develop robust and scalable systems that ensure your applications run smoothly, no matter the load.",
+        "heading3": "Stability You Can Trust",
+        "body3": "I prioritize building solutions that are robust, secure and maintainable, ensuring your applications are dependable now and in the future."
+      },
+      "5": {
+        "headline": "<0>Building scalable solutions</0> with elegance"
+      },
+      "6": {
+        "heading1": "Starting Small, Thinking Big",
+        "body1": "I create solutions with <0>future growth</0> in mind, ensuring that even the smallest projects have room to expand when needed.",
+        "heading2": "Efficiency in Every Step",
+        "body2": "I use tools like Docker and GitHub Actions to <0>streamline development</0>, making sure the process is smooth and efficient.",
+        "heading3": "Keeping It Simple",
+        "body3": "<0>Simplicity</0> makes solutions easier to maintain and improve. I aim to keep my designs and code clean, so they're easy to work with."
+      },
+      "7": {
+        "headline": "<0>Let's shape the future,</0> together"
+      },
+      "8": {
+        "heading1": "Get in Touch",
+        "body1": "Have a project in mind? Send a message and let's discuss how to bring it to life.",
+        "contactCta": "Contact me"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Jon Helge Skjærstein. All rights reserved.",
+    "social": {
+      "github": "GitHub",
+      "githubLabel": "Visit my GitHub profile",
+      "linkedin": "LinkedIn",
+      "linkedinLabel": "Visit my LinkedIn profile",
+      "email": "Email",
+      "emailLabel": "Send me an email"
+    }
+  }
+}
