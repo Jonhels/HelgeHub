@@ -209,6 +209,10 @@
   z-index: 7;
 }
 
+.article2 .article__content {
+  padding: 10% 0 5% 0;
+}
+
 .article3 {
   z-index: 6;
 }

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "logo": "Skjærstein, Jon Helge",
+    "language": "Språk",
+    "switchTo": "Bytt til engelsk"
+  },
+  "header": {
+    "title": "Jon Helge Skjærstein",
+    "subtitle": "Sertifisert Dataelektroniker | Bachelor i Webutvikling | Full-Stack Webutvikler",
+    "description": "Skaper innovative, brukervennlige webopplevelser gjennom rent design og effektiv kode",
+    "contactCta": "Kontakt meg"
+  },
+  "homepage": {
+    "meta": {
+      "titleDefault": "Skjærstein | Hjem",
+      "titleAlt": "Jon Helge | Skjærstein",
+      "descriptionDefault": "Velkommen til Skjærstein, hvor innovativt design møter skalerbar funksjonalitet.",
+      "descriptionAlt": "Utforsk Jon Helges portefølje for innovative webutviklings- og designløsninger."
+    },
+    "articles": {
+      "1": {
+        "headline": "<0>Skjærstein</0> skaper deg"
+      },
+      "2": {
+        "heading1": "Skalerbare webløsninger med kreativ presisjon",
+        "body1": "Jeg lager skalerbare, effektive og brukervennlige webløsninger. Med ferdigheter i React, Node.js og designverktøy som Figma kombinerer jeg kreativitet og presisjon for å levere slagkraftige resultater. Enten du trenger en dynamisk webapplikasjon, en moderne online tilstedeværelse eller et intuitivt brukergrensesnitt, er jeg her for å bringe din visjon til live.",
+        "heading2": "Strømlinjeformede prosesser, pålitelige løsninger",
+        "body2": "Jeg bruker moderne verktøy og arbeidsflyter for å sikre effektivitet og pålitelighet i hvert prosjekt. Med Docker lager jeg containeriserte miljøer for sømløs distribusjon. CI/CD-pipelines, drevet av GitHub Actions, sikrer smidig integrasjon og levering. Hostingplattformer som Railway lar meg distribuere skalerbare, produksjonsklare applikasjoner. Mitt fokus er på å levere løsninger som er robuste, vedlikeholdbare og tilpasningsdyktige.",
+        "heading3": "Designer for effekt, utvikler for skala",
+        "body3": "God utvikling er en balanse mellom kreativitet og presisjon. Min tilnærming kombinerer et brukerfokusert designperspektiv med en forpliktelse til å bygge skalerbare, effektive systemer. Hver kodelinje og designbeslutning er laget med hensikt for å skape sømløse opplevelser som løser virkelige problemer og styrker brukerne."
+      },
+      "3": {
+        "headline": "<0>Der innovativt design</0> møter sømløs funksjonalitet"
+      },
+      "4": {
+        "heading1": "Brukervennlig design",
+        "body1": "Hvert prosjekt starter med brukeren i tankene. Jeg prioriterer intuitive grensesnitt som gjør brukernes reise sømløs og fornøyelig.",
+        "heading2": "Effektiv funksjonalitet",
+        "body2": "Jeg utvikler robuste og skalerbare systemer som sikrer at applikasjonene dine kjører problemfritt, uansett belastning.",
+        "heading3": "Stabilitet du kan stole på",
+        "body3": "Jeg prioriterer å bygge løsninger som er robuste, sikre og vedlikeholdbare, og sikrer at applikasjonene dine er pålitelige nå og i fremtiden."
+      },
+      "5": {
+        "headline": "<0>Bygger skalerbare løsninger</0> med eleganse"
+      },
+      "6": {
+        "heading1": "Starter smått, tenker stort",
+        "body1": "Jeg lager løsninger med <0>fremtidig vekst</0> i tankene, og sikrer at selv de minste prosjektene har rom for utvidelse når det trengs.",
+        "heading2": "Effektivitet i hvert steg",
+        "body2": "Jeg bruker verktøy som Docker og GitHub Actions for å <0>strømlinjeforme utviklingen</0>, og sørger for at prosessen er smidig og effektiv.",
+        "heading3": "Holder det enkelt",
+        "body3": "<0>Enkelhet</0> gjør løsninger enklere å vedlikeholde og forbedre. Jeg tilstreber å holde design og kode ren, så de er enkle å jobbe med."
+      },
+      "7": {
+        "headline": "<0>La oss forme fremtiden,</0> sammen"
+      },
+      "8": {
+        "heading1": "Liker du meg?",
+        "body1": "Har du et prosjekt eller en idé i tankene? La oss samarbeide for å realisere det.",
+        "contactCta": "Kontakt meg"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Jon Helge Skjærstein. Alle rettigheter reservert.",
+    "social": {
+      "github": "GitHub",
+      "githubLabel": "Besøk min GitHub-profil",
+      "linkedin": "LinkedIn",
+      "linkedinLabel": "Besøk min LinkedIn-profil",
+      "email": "E-post",
+      "emailLabel": "Send meg en e-post"
+    }
+  }
+}

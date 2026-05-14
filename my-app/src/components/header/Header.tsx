@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
 import "./Header.css"
 import Jacke from "../../icons/Jacke.svg"
 import type { Dimensions } from "../../types/components"
@@ -72,12 +73,25 @@ const Particle = ({ headerWidth, headerHeight }: ParticleProps) => {
 }
 
 const Header = () => {
+  const { t } = useTranslation()
   const [dimensions, setDimensions] = useState<Dimensions>({
     width: window.innerWidth,
     height: window.innerHeight,
   })
 
   const [particleKey, setParticleKey] = useState<number>(0)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState<boolean>(
+    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  )
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    const handleChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches)
+    }
+    mediaQuery.addEventListener("change", handleChange)
+    return () => mediaQuery.removeEventListener("change", handleChange)
+  }, [])
 
   useEffect(() => {
     const handleResize = () => {
@@ -98,35 +112,35 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="headerParticles" key={particleKey}>
-        {Array.from({ length: 100 }).map((_, index) => (
-          <Particle
-            key={index}
-            headerWidth={dimensions.width}
-            headerHeight={dimensions.height}
-          />
-        ))}
-      </div>
+      {!prefersReducedMotion && (
+        <div className="headerParticles" key={particleKey}>
+          {Array.from({ length: 100 }).map((_, index) => (
+            <Particle
+              key={index}
+              headerWidth={dimensions.width}
+              headerHeight={dimensions.height}
+            />
+          ))}
+        </div>
+      )}
       <div className="headerInformation">
-        <h1 tabIndex={0} className="headerInformation__title">
-          Jon Helge Skjærstein
+        <h1 className="headerInformation__title">
+          {t("header.title")}
         </h1>
-        <p tabIndex={0} className="headerInformation__subtitle">
-          Certified Computer Electronics Specialist | Bachelor's in Web
-          Development | Full-Stack Web Developer
+        <p className="headerInformation__subtitle">
+          {t("header.subtitle")}
         </p>
       </div>
       <div className="headerContactWrapper">
         <div className="headerContact">
-          <p tabIndex={0} className="headerContact__text">
-            Creating innovative, user-friendly web experiences through clean
-            design and efficient code
+          <p className="headerContact__text">
+            {t("header.description")}
           </p>
           <a
             className="headerContact__link"
             href="mailto:jon.helge@skjaerstein.com"
           >
-            Contact me
+            {t("header.contactCta")}
           </a>
         </div>
       </div>

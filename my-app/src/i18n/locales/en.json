@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "logo": "Skjærstein, Jon Helge",
+    "language": "Language",
+    "switchTo": "Switch to Norwegian"
+  },
+  "header": {
+    "title": "Jon Helge Skjærstein",
+    "subtitle": "Certified Computer Electronics Specialist | Bachelor's in Web Development | Full-Stack Web Developer",
+    "description": "Creating innovative, user-friendly web experiences through clean design and efficient code",
+    "contactCta": "Contact me"
+  },
+  "homepage": {
+    "meta": {
+      "titleDefault": "Skjærstein | Home",
+      "titleAlt": "Jon Helge | Skjærstein",
+      "descriptionDefault": "Welcome to Skjærstein, where innovative design meets scalable functionality.",
+      "descriptionAlt": "Explore Jon Helge's portfolio for innovative web development and design solutions."
+    },
+    "articles": {
+      "1": {
+        "headline": "<0>Skjærstein</0> creates you"
+      },
+      "2": {
+        "heading1": "Scalable Web Solutions with Creative Precision",
+        "body1": "I craft scalable, efficient, and user-friendly web solutions. With skills in React, Node.js, and design tools like Figma, I combine creativity and precision to deliver impactful results. Whether you need a dynamic web application, a modern online presence, or an intuitive user interface, I'm here to bring your vision to life.",
+        "heading2": "Streamlined Processes, Reliable Solutions",
+        "body2": "I utilize modern tools and workflows to ensure efficiency and reliability in every project. With Docker, I create containerized environments for seamless deployment. CI/CD pipelines, powered by GitHub Actions, ensure smooth integration and delivery. Hosting platforms like Railway allow me to deploy scalable, production-ready applications. My focus is on delivering solutions that are robust, maintainable, and adaptable.",
+        "heading3": "Designing for Impact, Developing for Scale",
+        "body3": "Great development is a balance of creativity and precision. My approach combines a user-focused design mindset with a commitment to building scalable, efficient systems. Every line of code and design decision is crafted with purpose to create seamless experiences that solve real-world problems and empower users."
+      },
+      "3": {
+        "headline": "<0>Where Innovative design</0> meets seamless functionality"
+      },
+      "4": {
+        "heading1": "User-Centered Design",
+        "body1": "Every project starts with the user in mind. I prioritize intuitive interfaces that make your users' journey seamless and enjoyable.",
+        "heading2": "Efficient Functionality",
+        "body2": "I develop robust and scalable systems that ensure your applications run smoothly, no matter the load.",
+        "heading3": "Stability You Can Trust",
+        "body3": "I prioritize building solutions that are robust, secure and maintainable, ensuring your applications are dependable now and in the future."
+      },
+      "5": {
+        "headline": "<0>Building scalable solutions</0> with elegance"
+      },
+      "6": {
+        "heading1": "Starting Small, Thinking Big",
+        "body1": "I create solutions with <0>future growth</0> in mind, ensuring that even the smallest projects have room to expand when needed.",
+        "heading2": "Efficiency in Every Step",
+        "body2": "I use tools like Docker and GitHub Actions to <0>streamline development</0>, making sure the process is smooth and efficient.",
+        "heading3": "Keeping It Simple",
+        "body3": "<0>Simplicity</0> makes solutions easier to maintain and improve. I aim to keep my designs and code clean, so they're easy to work with."
+      },
+      "7": {
+        "headline": "<0>Let's shape the future,</0> together"
+      },
+      "8": {
+        "heading1": "Do you like me?",
+        "body1": "Have a project or an idea in mind? Let's work together to make it happen.",
+        "contactCta": "Contact me"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Jon Helge Skjærstein. All rights reserved.",
+    "social": {
+      "github": "GitHub",
+      "githubLabel": "Visit my GitHub profile",
+      "linkedin": "LinkedIn",
+      "linkedinLabel": "Visit my LinkedIn profile",
+      "email": "Email",
+      "emailLabel": "Send me an email"
+    }
+  }
+}

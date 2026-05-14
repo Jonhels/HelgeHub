@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async"
 import { useLocation } from "react-router-dom"
+import { useTranslation, Trans } from "react-i18next"
 import Header from "../components/header/Header"
 import "./styles/HomePage.css"
 import check from "../icons/check.svg"
@@ -14,19 +15,23 @@ import user from "../icons/user.svg"
 const HomePage = () => {
   const location = useLocation()
   const isJonHelgePage = location.pathname === "/jon-helge"
+  const { t, i18n } = useTranslation()
 
   return (
     <div className="home" style={{ width: "100%", height: "100%" }}>
       <Helmet>
+        <html lang={i18n.language} />
         <title>
-          {isJonHelgePage ? "Jon Helge | Skjærstein" : "Skjærstein | Home"}
+          {isJonHelgePage
+            ? t("homepage.meta.titleAlt")
+            : t("homepage.meta.titleDefault")}
         </title>
         <meta
           name="description"
           content={
             isJonHelgePage
-              ? "Explore Jon Helge's portfolio for innovative web development and design solutions."
-              : "Welcome to Skjærstein, where innovative design meets scalable functionality."
+              ? t("homepage.meta.descriptionAlt")
+              : t("homepage.meta.descriptionDefault")
           }
         />
       </Helmet>
@@ -36,8 +41,11 @@ const HomePage = () => {
 
       <div className="home__content">
         <article className="article article1">
-          <h2 tabIndex={0}>
-            <span>Skjærstein</span> creates you
+          <h2>
+            <Trans
+              i18nKey="homepage.articles.1.headline"
+              components={[<span key="0" />]}
+            />
           </h2>
         </article>
 
@@ -45,45 +53,19 @@ const HomePage = () => {
           <div className="article__content">
             <div className="article__text_wrapper">
               <div className="article__text">
-                <h3 tabIndex={0}>
-                  Scalable Web Solutions with Creative Precision
-                </h3>
-                <p tabIndex={0}>
-                  I craft scalable, efficient, and user-friendly web solutions.
-                  With skills in React, Node.js, and design tools like Figma, I
-                  combine creativity and precision to deliver impactful results.
-                  Whether you need a dynamic web application, a modern online
-                  presence, or an intuitive user interface, I'm here to bring
-                  your vision to life.
-                </p>
+                <h3>{t("homepage.articles.2.heading1")}</h3>
+                <p>{t("homepage.articles.2.body1")}</p>
               </div>
               <div className="article__text">
-                <h3 tabIndex={0}>Streamlined Processes, Reliable Solutions</h3>
-                <p tabIndex={0}>
-                  I utilize modern tools and workflows to ensure efficiency and
-                  reliability in every project. With Docker, I create
-                  containerized environments for seamless deployment. CI/CD
-                  pipelines, powered by GitHub Actions, ensure smooth
-                  integration and delivery. Hosting platforms like Railway allow
-                  me to deploy scalable, production-ready applications. My focus
-                  is on delivering solutions that are robust, maintainable, and
-                  adaptable.
-                </p>
+                <h3>{t("homepage.articles.2.heading2")}</h3>
+                <p>{t("homepage.articles.2.body2")}</p>
               </div>
               <div className="article__text">
-                <h3 tabIndex={0}>Designing for Impact, Developing for Scale</h3>
-                <p tabIndex={0}>
-                  Great development is a balance of creativity and precision. My
-                  approach combines a user-focused design mindset with a
-                  commitment to building scalable, efficient systems. Every line
-                  of code and design decision is crafted with purpose to create
-                  seamless experiences that solve real-world problems and
-                  empower users.
-                </p>
+                <h3>{t("homepage.articles.2.heading3")}</h3>
+                <p>{t("homepage.articles.2.body3")}</p>
               </div>
             </div>
             <img
-              tabIndex={0}
               src={illustration}
               alt="Illustration"
               className="article__image"
@@ -92,8 +74,11 @@ const HomePage = () => {
         </article>
 
         <article className="article article3">
-          <h2 tabIndex={0}>
-            <span>Where Innovative design</span> meets seamless functionality
+          <h2>
+            <Trans
+              i18nKey="homepage.articles.3.headline"
+              components={[<span key="0" />]}
+            />
           </h2>
         </article>
 
@@ -103,34 +88,23 @@ const HomePage = () => {
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={user} alt="user" />
                 <div>
-                  <h3 tabIndex={0}>User-Centered Design</h3>
-                  <p tabIndex={0}>
-                    Every project starts with the user in mind. I prioritize
-                    intuitive interfaces that make your users' journey seamless
-                    and enjoyable.
-                  </p>
+                  <h3>{t("homepage.articles.4.heading1")}</h3>
+                  <p>{t("homepage.articles.4.body1")}</p>
                 </div>
               </div>
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={check} alt="check" />
                 <div>
-                  <h3 tabIndex={0}>Efficient Functionality</h3>
-                  <p tabIndex={0}>
-                    I develop robust and scalable systems that ensure your
-                    applications run smoothly, no matter the load.
-                  </p>
+                  <h3>{t("homepage.articles.4.heading2")}</h3>
+                  <p>{t("homepage.articles.4.body2")}</p>
                 </div>
               </div>
 
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={shield} alt="shield" />
                 <div>
-                  <h3 tabIndex={0}>Stability You Can Trust</h3>
-                  <p tabIndex={0}>
-                    I prioritize building solutions that are robust, secure and
-                    maintainable, ensuring your applications are dependable now
-                    and in the future.
-                  </p>
+                  <h3>{t("homepage.articles.4.heading3")}</h3>
+                  <p>{t("homepage.articles.4.body3")}</p>
                 </div>
               </div>
             </div>
@@ -139,7 +113,10 @@ const HomePage = () => {
 
         <article className="article article5">
           <h2>
-            <span tabIndex={0}>Building scalable solutions</span> with elegance
+            <Trans
+              i18nKey="homepage.articles.5.headline"
+              components={[<span key="0" />]}
+            />
           </h2>
         </article>
 
@@ -149,23 +126,28 @@ const HomePage = () => {
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={trending} alt="Trending" />
                 <div>
-                  <h3 tabIndex={0}>Starting Small, Thinking Big</h3>
-                  <p tabIndex={0}>
-                    I create solutions with{" "}
-                    <span className="highlight">future growth</span> in mind,
-                    ensuring that even the smallest projects have room to expand
-                    when needed.
+                  <h3>{t("homepage.articles.6.heading1")}</h3>
+                  <p>
+                    <Trans
+                      i18nKey="homepage.articles.6.body1"
+                      components={[
+                        <span className="highlight" key="0" />,
+                      ]}
+                    />
                   </p>
                 </div>
               </div>
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={cogwheel} alt="cogwheel" />
                 <div>
-                  <h3 tabIndex={0}>Efficiency in Every Step</h3>
-                  <p tabIndex={0}>
-                    I use tools like Docker and GitHub Actions to{" "}
-                    <span className="highlight">streamline development</span>,
-                    making sure the process is smooth and efficient.
+                  <h3>{t("homepage.articles.6.heading2")}</h3>
+                  <p>
+                    <Trans
+                      i18nKey="homepage.articles.6.body2"
+                      components={[
+                        <span className="highlight" key="0" />,
+                      ]}
+                    />
                   </p>
                 </div>
               </div>
@@ -173,17 +155,19 @@ const HomePage = () => {
               <div className="article__text article__text_flex">
                 <img className="article__icon" src={umbrella} alt="umbrella" />
                 <div>
-                  <h3 tabIndex={0}>Keeping It Simple</h3>
-                  <p tabIndex={0}>
-                    <span className="highlight">Simplicity</span> makes
-                    solutions easier to maintain and improve. I aim to keep my
-                    designs and code clean, so they're easy to work with.
+                  <h3>{t("homepage.articles.6.heading3")}</h3>
+                  <p>
+                    <Trans
+                      i18nKey="homepage.articles.6.body3"
+                      components={[
+                        <span className="highlight" key="0" />,
+                      ]}
+                    />
                   </p>
                 </div>
               </div>
             </div>
             <img
-              tabIndex={0}
               src={puzzle}
               alt="Puzzle"
               className="article__image_puzzle"
@@ -192,8 +176,11 @@ const HomePage = () => {
         </article>
 
         <article className="article article7">
-          <h2 tabIndex={0}>
-            <span>Let's shape the future,</span> together
+          <h2>
+            <Trans
+              i18nKey="homepage.articles.7.headline"
+              components={[<span key="0" />]}
+            />
           </h2>
         </article>
 
@@ -202,16 +189,13 @@ const HomePage = () => {
             <div className="article__text_wrapper">
               <div className=".article__text_contact">
                 <div className="article__contact">
-                  <h3 tabIndex={0}>Do you like me?</h3>
-                  <p tabIndex={0}>
-                    Have a project or an idea in mind? Let's work together to
-                    make it happen.
-                  </p>
+                  <h3>{t("homepage.articles.8.heading1")}</h3>
+                  <p>{t("homepage.articles.8.body1")}</p>
                   <a
                     className="articleContact__link"
                     href="mailto:jon.helge@skjaerstein.com"
                   >
-                    Contact me
+                    {t("homepage.articles.8.contactCta")}
                   </a>
                 </div>
               </div>

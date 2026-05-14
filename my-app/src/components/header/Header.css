@@ -31,7 +31,7 @@
   color: var(--font-color-light);
   font-weight: lighter;
   font-size: var(--font-size-title);
-  width: 30%;
+  width: 50%;
   margin-bottom: 15px;
 }
 
@@ -134,5 +134,11 @@
 
   .headerContact__text {
     width: 85%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerParticles {
+    display: none;
   }
 }
