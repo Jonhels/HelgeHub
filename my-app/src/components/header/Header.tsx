@@ -2,8 +2,10 @@ import { motion } from "motion/react"
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import "./Header.css"
-import Jacke from "../../icons/Jacke.svg"
 import type { Dimensions } from "../../types/components"
+
+// Logo is served from the public folder root by Vite
+const Jacke = "/Jacke.svg"
 
 // Utility to generate random values
 const randomValue = (min: number, max: number): number =>

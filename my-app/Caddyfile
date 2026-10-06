@@ -1,34 +1,37 @@
-# Global Caddy settings
+# global options
 {
-    admin off # Disable admin API (not needed in Railway)
-    persist_config off # Storage isn't persistent anyway
-    auto_https off # Railway handles HTTPS, so this would cause issues
+    admin off # there's no need for the admin api in railway's environment
+    persist_config off # storage isn't persistent anyway
+    auto_https off # railway handles https for us, this would cause issues if left enabled
+    # runtime logs
     log {
-        format json # Set runtime log format to JSON
+        format json # set runtime log format to json mode
     }
+    # server options
     servers {
-        trusted_proxies static private_ranges 100.0.0.0/8 # Trust Railway's proxy
+        trusted_proxies static 0.0.0.0/0 ::/0
     }
 }
 
-# Listen on Railway's assigned $PORT
+# site block, listens on the $PORT environment variable, automatically assigned by railway
 :{$PORT:3000} {
+    # access logs
     log {
-        format json # Set access log format to JSON
+        format json # set access log format to json mode
     }
 
-    # Health check for Railway
+    # health check for railway
     rewrite /health /*
 
-    # Serve from 'dist' folder (Vite builds into 'dist')
+    # serve from the 'dist' folder (Vite builds into the 'dist' folder)
     root * dist
 
-    # Enable Gzip compression
+    # enable gzipping responses
     encode gzip
 
-    # Serve files from 'dist'
+    # serve files from 'dist'
     file_server
 
-    # If path doesn't exist, serve 'index.html' for client-side routing
+    # if path doesn't exist, redirect it to 'index.html' for client side routing
     try_files {path} /index.html
 }
