@@ -21,6 +21,15 @@
   --dark-background-color: #131316;
   --light-background-color: #fff;
   --button-background-color: #007bff;
+  /* Festive accents */
+  --holiday-gold: #d4af37;
+  --holiday-gold-deep: #8f6d0f;
+  --holiday-red: #c0392b;
+  --holiday-red-deep: #7f1d1a;
+  --holiday-green: #2e8b57;
+  --holiday-green-deep: #14532d;
+  --holiday-cream: #f4e7c3;
+  --holiday-silver: #d9dee6;
 }
 
 body {
@@ -45,11 +54,17 @@ body {
 
 .skip-link:focus {
   top: 0;
+  background: var(--holiday-red);
+}
+
+/* Festive text highlight */
+.highlight {
+  color: var(--holiday-gold-deep);
 }
 
 /* Focus visible */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--button-background-color);
+  outline: 2px solid var(--holiday-gold-deep);
   outline-offset: 2px;
 }

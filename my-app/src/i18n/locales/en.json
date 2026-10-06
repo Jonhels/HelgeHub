@@ -57,12 +57,35 @@
       "8": {
         "heading1": "Get in Touch",
         "body1": "Have a project in mind? Send a message and let's discuss how to bring it to life.",
-        "contactCta": "Contact me"
+        "contactCta": "Contact me",
+        "form": {
+          "nameLabel": "Name",
+          "namePlaceholder": "Your name",
+          "emailLabel": "Email",
+          "emailPlaceholder": "your.email@example.com",
+          "messageLabel": "Message",
+          "messagePlaceholder": "Tell me about your project...",
+          "subject": "New message from skjaerstein.com",
+          "close": "Close"
+        }
       }
+    },
+    "giftboxes": {
+      "label": "Open a fun fact",
+      "title": "Fun fact",
+      "hint": "Open me!",
+      "1": "Jon Helge once spent a whole evening hunting a bug that turned out to be a missing semicolon. Biome fights that battle for him now.",
+      "2": "Certified computer electronics specialist: he can fix your laptop and your layout in the same afternoon.",
+      "3": "Jon Helge's first line of code printed “Hello, world”. He has been chasing that feeling ever since.",
+      "4": "Favorite keyboard shortcut? Ctrl+Z, closely followed by git reflog.",
+      "5": "He earned a bachelor's in web development and an honorary diploma in drinking coffee while Docker builds.",
+      "6": "GitHub Actions handles his CI/CD, so he can relax during deploys — in theory. He still watches the logs.",
+      "7": "He hosts on Railway, but his best ideas still run on fresh coffee and Christmas music.",
+      "8": "Every project starts with a sketch, a coffee, and the words: “this should be simple enough”."
     }
   },
   "footer": {
-    "copyright": "© 2025 Jon Helge Skjærstein. All rights reserved.",
+    "copyright": "© 2026 Jon Helge Skjærstein. All rights reserved.",
     "social": {
       "github": "GitHub",
       "githubLabel": "Visit my GitHub profile",

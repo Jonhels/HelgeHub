@@ -22,6 +22,16 @@
   pointer-events: none;
 }
 
+.bauble {
+  will-change: transform, opacity;
+}
+
+.bauble svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .headerInformation {
   z-index: 1;
   position: relative;
@@ -85,7 +95,8 @@
 }
 
 .headerContact__link:hover {
-  color: var(--font-color-gray-header);
+  color: var(--font-color-dark);
+  background-color: var(--holiday-gold);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }

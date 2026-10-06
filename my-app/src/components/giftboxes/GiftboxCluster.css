@@ -1,0 +1,238 @@
+/* Giftbox clusters anchored to the top corners of each article. The container
+   never captures pointer events; only the cluster button (and the open
+   tooltip) are interactive. */
+.giftbox-cluster {
+  position: absolute;
+  z-index: 8;
+  max-width: min(320px, 80vw);
+  pointer-events: none;
+}
+
+.giftbox-cluster--top-left {
+  top: 6%;
+  left: 4%;
+}
+
+.giftbox-cluster--top-right {
+  top: 6%;
+  right: 4%;
+}
+
+.giftbox-cluster__button {
+  display: block;
+  margin: 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  transform-origin: center bottom;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.giftbox-cluster__boxes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  filter: drop-shadow(0 8px 8px rgba(19, 19, 22, 0.22));
+}
+
+.giftbox {
+  position: relative;
+  display: block;
+  flex: none;
+  z-index: var(--giftbox-z, 1);
+  transform-origin: bottom center;
+  transition: filter 0.2s ease;
+}
+
+/* Overlap the boxes so they read as one heap */
+.giftbox + .giftbox {
+  margin-left: -20px;
+}
+
+.giftbox-cluster__button:hover .giftbox {
+  filter: brightness(1.06);
+}
+
+/* Lift the hovered box so it stays above the rest of the heap */
+.giftbox:hover {
+  z-index: 30;
+}
+
+/* Shared “Open me!” hint anchored to the top-right of the cluster. It floats
+   gently to invite the click, but never captures pointer events, so taps and
+   keyboard activation still toggle the fun-fact tooltip. */
+.giftbox-cluster__bubble {
+  --bubble-scale: 1;
+  position: absolute;
+  top: -0.6rem;
+  right: -0.4rem;
+  z-index: 25;
+  padding: 0.3rem 0.7rem;
+  border: 2px solid var(--holiday-gold-deep);
+  border-radius: 999px 999px 999px 6px;
+  background-color: var(--holiday-cream);
+  color: var(--holiday-red-deep);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(19, 19, 22, 0.28);
+  transform-origin: bottom right;
+  animation: giftbox-bubble-float 2.8s ease-in-out infinite;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+
+/* Cute little speech-bubble tail pointing down towards the gift heap */
+.giftbox-cluster__bubble::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: -7px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--holiday-gold-deep);
+  border-bottom: 2px solid var(--holiday-gold-deep);
+  border-radius: 0 0 3px 0;
+  background-color: var(--holiday-cream);
+  transform: rotate(45deg);
+}
+
+/* Tuck the invitation away while the fun fact is open */
+.giftbox-cluster__bubble--hidden {
+  opacity: 0;
+}
+
+@keyframes giftbox-bubble-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(var(--bubble-scale, 1));
+  }
+
+  50% {
+    transform: translateY(-4px) scale(var(--bubble-scale, 1));
+  }
+}
+
+.giftbox-cluster__tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  z-index: 20;
+  width: max-content;
+  max-width: min(260px, 74vw);
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--holiday-gold-deep);
+  border-radius: 12px;
+  background-color: var(--holiday-cream);
+  color: var(--font-color-dark);
+  box-shadow: 0 12px 28px rgba(19, 19, 22, 0.28);
+  pointer-events: auto;
+  animation: giftbox-tooltip-in 0.18s ease-out;
+}
+
+.giftbox-cluster__tooltip-title {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--holiday-red-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.giftbox-cluster__tooltip p {
+  font-size: var(--font-size-small);
+  line-height: 1.4;
+}
+
+/* Keep the tooltip aligned with the corner the cluster sits in */
+.giftbox-cluster--top-left .giftbox-cluster__tooltip {
+  left: 0;
+}
+
+.giftbox-cluster--top-right .giftbox-cluster__tooltip {
+  right: 0;
+}
+
+@keyframes giftbox-tooltip-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .giftbox-cluster--top-left {
+    top: 4%;
+    left: 3%;
+  }
+
+  .giftbox-cluster--top-right {
+    top: 4%;
+    right: 3%;
+  }
+
+  /* Shrink the cluster so it stays clear of the centered article text */
+  .giftbox-cluster__boxes {
+    transform: scale(0.68);
+  }
+
+  .giftbox-cluster--top-left .giftbox-cluster__boxes {
+    transform-origin: top left;
+  }
+
+  .giftbox-cluster--top-right .giftbox-cluster__boxes {
+    transform-origin: top right;
+  }
+
+  .giftbox-cluster__button {
+    padding: 0.25rem;
+  }
+
+  .giftbox + .giftbox {
+    margin-left: -26px;
+  }
+
+  /* Scale the bubble down so it stays clear of the article text */
+  .giftbox-cluster__bubble {
+    --bubble-scale: 0.82;
+    top: -0.3rem;
+    right: -0.2rem;
+    padding: 0.22rem 0.5rem;
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .giftbox-cluster__boxes {
+    transform: scale(0.55);
+  }
+
+  .giftbox-cluster__bubble {
+    --bubble-scale: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .giftbox-cluster__tooltip {
+    animation: none;
+  }
+
+  .giftbox {
+    transition: none;
+  }
+
+  .giftbox-cluster__bubble {
+    animation: none;
+    transform: scale(var(--bubble-scale, 1));
+  }
+}
