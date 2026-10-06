@@ -1,0 +1,43 @@
+/* Fixed overlay so snow keeps falling over the sticky articles */
+.snow {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Let clicks pass through to content and forms */
+  z-index: 30;
+}
+
+.snowflake {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #eef3fb 35%,
+    rgba(190, 205, 230, 0.55) 60%,
+    rgba(190, 205, 230, 0) 100%
+  );
+  will-change: transform;
+  animation-name: snowfall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(0, -15vh, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--snow-drift, 0px), 115vh, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snow {
+    display: none;
+  }
+}

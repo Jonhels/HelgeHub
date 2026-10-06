@@ -52,8 +52,9 @@ nav a:hover {
 }
 
 .languageToggle:hover {
-  background-color: var(--font-color-light);
-  color: var(--dark-background-color);
+  border-color: var(--holiday-green);
+  background-color: transparent;
+  color: var(--holiday-green);
 }
 
 /* Responsive typography for h2 elements */

@@ -39,6 +39,17 @@
   height: 24px;
 }
 
+.socialIcons a {
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.7));
+}
+
 .iconWithLabel {
   display: flex;
   flex-direction: column;

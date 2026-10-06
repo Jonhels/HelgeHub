@@ -57,12 +57,35 @@
       "8": {
         "heading1": "Ta kontakt",
         "body1": "Har du et prosjekt i tankene? Send en melding, så finner vi ut av det sammen.",
-        "contactCta": "Kontakt"
+        "contactCta": "Kontakt",
+        "form": {
+          "nameLabel": "Navn",
+          "namePlaceholder": "Ditt navn",
+          "emailLabel": "E-post",
+          "emailPlaceholder": "din.epost@eksempel.no",
+          "messageLabel": "Melding",
+          "messagePlaceholder": "Fortell meg om prosjektet ditt...",
+          "subject": "Ny melding fra skjaerstein.com",
+          "close": "Lukk"
+        }
       }
+    },
+    "giftboxes": {
+      "label": "Åpne en fun fact",
+      "title": "Fun fact",
+      "hint": "Åpne meg!",
+      "1": "Jon Helge brukte en hel kveld på å jakte en bug som viste seg å være et manglende semikolon. Nå tar Biome den kampen for ham.",
+      "2": "Sertifisert dataelektroniker: han fikser både laptopen og layouten din på samme ettermiddag.",
+      "3": "Jon Helges første kodelinje skrev «Hello, world». Han har jaktet på den følelsen siden.",
+      "4": "Favorittsnarvei? Ctrl+Z, tett fulgt av git reflog.",
+      "5": "Han har bachelor i webutvikling og et æresdiplom i å drikke kaffe mens Docker bygger.",
+      "6": "GitHub Actions tar seg av CI/CD-en, så han kan slappe av under deploy – i teorien. Han følger fortsatt med på loggen.",
+      "7": "Han hoster på Railway, men de beste ideene kjører fortsatt på fersk kaffe og julemusikk.",
+      "8": "Hvert prosjekt starter med en skisse, en kaffe og ordene: «dette burde være enkelt nok»."
     }
   },
   "footer": {
-    "copyright": "© 2025 Jon Helge Skjærstein. Alle rettigheter reservert.",
+    "copyright": "© 2026 Jon Helge Skjærstein. Alle rettigheter reservert.",
     "social": {
       "github": "GitHub",
       "githubLabel": "Besøk min GitHub-profil",
